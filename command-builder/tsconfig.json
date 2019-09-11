@@ -15,6 +15,18 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strictNullChecks": true,
-    "types": ["node", "jasmine"]
-  }
+    "types": ["node", "jasmine"],
+    "paths": {
+      "@components/*": [
+        "../components/*",
+        "../app/components/*",
+        "../src/app/components/*",
+        "../builder-test/src/app/components/*",
+        "./src/app/components/*",
+        "./app/components/*",
+        "./src/app/components/*"
+      ]
+    }
+  },
+  "includes": ["./**/*", "../builder-test/src/**/*"]
 }
